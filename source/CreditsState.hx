@@ -81,6 +81,11 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			['Miner Disco! Mod'],
+			['miniraposa',		'miniraposa',		'charter, musician, artist, coder, Voice actor',								'https://www.youtube.com/channel/UCqK_3WPr2TeqObnS-1_0zpw',	'444444'],
+			['Linfox',			'linfox',			'musician, modeler, artist',							'https://www.youtube.com/c/LinFoxGamer',		'B42F71'],
+			['CatVegan100',				'catvegan',			'Character',						'https://scratch.mit.edu/users/catvegan100',			'5E99DF'],
+			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'river',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/RiverOaken',		'B42F71'],
