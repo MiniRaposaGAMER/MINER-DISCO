@@ -236,7 +236,8 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'story_mode':
-										MusicBeatState.switchState(new StoryMenuState());
+                                                                        PlayState.SONG = Song.loadFromJson('crossover-no-mine-hard', 'crossover-no-mine');
+                                                                        LoadingState.loadAndSwitchState(new PlayState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED
