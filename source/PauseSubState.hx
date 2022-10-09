@@ -218,11 +218,16 @@ class PauseSubState extends MusicBeatSubstate
 					menuItems = difficultyChoices;
 					deleteSkipTimeText();
 					regenMenu();
+                                case "Options":
+                                        LoadingState.loadAndSwitchState(new options.OptionsState());
+                                        FlxG.sound.playMusic(Paths.music('freakyMenu'));
+                                        PlayState.changedDifficulty = false;
+                                        PlayState.chartingMode = false;
 				case 'Toggle Practice Mode':
 					PlayState.instance.practiceMode = !PlayState.instance.practiceMode;
 					PlayState.changedDifficulty = true;
 					practiceText.visible = PlayState.instance.practiceMode;
-				case "Restart Song":
+				case "Start Over":
 					restartSong();
 				case "Leave Charting Mode":
 					restartSong();
