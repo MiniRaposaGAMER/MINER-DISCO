@@ -45,6 +45,8 @@ class GitarooPause extends MusicBeatState
 		cancelButton.animation.play('selected');
 		add(cancelButton);
 
+		changeThing();
+
 		super.create();
 	}
 
@@ -86,3 +88,4 @@ class GitarooPause extends MusicBeatState
 		}
 	}
 }
+
