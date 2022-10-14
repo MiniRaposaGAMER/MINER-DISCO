@@ -236,13 +236,14 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'story_mode':
-                                                                        PlayState.SONG = Song.loadFromJson('crossover-no-mine-hard', 'crossover-no-mine');
-                                                                        LoadingState.loadAndSwitchState(new PlayState());
+                                                                                PlayState.SONG = Song.loadFromJson('crossover-no-mine-hard', 'crossover-no-mine');
+                                                                                LoadingState.loadAndSwitchState(new PlayState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED
 									case 'mods':
-										MusicBeatState.switchState(new GitarooPause());
+                                                                                PlayState.SONG = Song.loadFromJson('keter-hard', 'keter');
+                                                                                LoadingState.loadAndSwitchState(new PlayState());
 									#end
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());
