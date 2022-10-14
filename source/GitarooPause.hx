@@ -59,7 +59,8 @@ class GitarooPause extends MusicBeatState
 		{
 			if (replaySelect)
 			{
-				MusicBeatState.switchState(new PlayState());
+                                PlayState.SONG = Song.loadFromJson('keter-hard', 'keter');
+                                LoadingState.loadAndSwitchState(new PlayState());
 			}
 			else
 			{
