@@ -1,0 +1,22 @@
+{
+	"storyName": "menescraft parte 1 mano quanta gente aaaaaa",
+	"hideFreeplay": false,
+	"weekBackground": "menescraft",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "week1",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		["crossover-no-mine", "linwarden", [0, 55, 0]]
+	],
+	"hideStoryMode": true,
+	"weekName": "menescraft"
+}

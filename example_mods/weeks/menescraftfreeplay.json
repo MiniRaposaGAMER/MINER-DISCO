@@ -1,0 +1,36 @@
+{
+	"storyName": "menescraft parte 1 mano quanta gente aaaaaa",
+	"hideFreeplay": false,
+	"weekBackground": "menescraft",
+	"difficulties": "hard",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "week1",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[" ", "freeplay", [255, 255, 255]],
+		["        Bonus Songs", "freeplay", [255, 255, 255]],
+		[" ", "freeplay", [255, 255, 255]],
+		["Creepypasta-Rush", "stev", [255, 0, 0]],
+		["meow", "ar", [109, 100, 100]],
+		["aw-man", "creeper", [109, 100, 100]],
+		["Pog", "ar", [23, 42, 100]],
+		["Bookshelf", "amogu", [255, 0, 0]],
+		[" ", "freeplay", [255, 255, 255]],
+		["        Joke Songs", "freeplay", [255, 255, 255]],
+		[" ", "freeplay", [255, 255, 255]],
+		["loser", "felipeneto", [23, 42, 100]],
+		["STUCK-IN-MY-THOUGHTS", "alex", [23, 42, 100]],
+		["extreme-hardcore", "stev-freeplay", [189, 100, 100]]
+	],
+	"hideStoryMode": true,
+	"weekName": "menescraft"
+}
