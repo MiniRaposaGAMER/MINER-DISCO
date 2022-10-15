@@ -30,6 +30,10 @@
 		["loser", "felipeneto", [23, 42, 100]],
 		["STUCK-IN-MY-THOUGHTS", "alex", [23, 42, 100]],
 		["extreme-hardcore", "stev-freeplay", [189, 100, 100]]
+		[" ", "freeplay", [255, 255, 255]],
+		["        GITHUB EXCLUSIVE Songs", "freeplay", [255, 255, 255]],
+		[" ", "freeplay", [255, 255, 255]],
+		["M", "pico", [23, 42, 100]],
 	],
 	"hideStoryMode": true,
 	"weekName": "menescraft"
