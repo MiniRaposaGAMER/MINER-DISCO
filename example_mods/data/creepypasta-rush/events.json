@@ -1,0 +1,111 @@
+{
+	"song": {
+		"events": [
+			[
+				20528.7356321839,
+				[
+					[
+						"bgremove",
+						"matrix",
+						""
+					]
+				]
+			],
+			[
+				20612.0689655172,
+				[
+					[
+						"Change Character",
+						"1",
+						"minenull"
+					]
+				]
+			],
+			[
+				86128.7356321839,
+				[
+					[
+						"bgremove",
+						"crimsonsky",
+						""
+					],
+					[
+						"bgremove",
+						"crimsontrees",
+						""
+					],
+					[
+						"bgremove",
+						"crimsonground",
+						""
+					],
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					]
+				]
+			],
+			[
+				86203.7356321839,
+				[
+					[
+						"Change Character",
+						"2",
+						"ar"
+					]
+				]
+			],
+			[
+				124753.735632184,
+				[
+					[
+						"Change Character",
+						"2",
+						"entity303"
+					]
+				]
+			],
+			[
+				162551.462904911,
+				[
+					[
+						"bgremove",
+						"beachsky",
+						""
+					]
+				]
+			],
+			[
+				162601.462904911,
+				[
+					[
+						"Change Character",
+						"2",
+						"gf"
+					]
+				]
+			],
+			[
+				162651.462904911,
+				[
+					[
+						"Change Character",
+						"1",
+						"entity303"
+					]
+				]
+			],
+			[
+				189776.462904911,
+				[
+					[
+						"Change Character",
+						"1",
+						"lick"
+					]
+				]
+			]
+		]
+	}
+}

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				49,
+				50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "stev"
+		},
+		{
+			"offsets": [
+				-48,
+				50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "stev"
+		},
+		{
+			"offsets": [
+				60,
+				50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "stev"
+		},
+		{
+			"offsets": [
+				74,
+				60
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "stev"
+		},
+		{
+			"offsets": [
+				230,
+				67
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "stev"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/stev",
+	"position": [
+		0,
+		170
+	],
+	"healthicon": "stev",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		216,
+		255
+	],
+	"camera_position": [
+		-250,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.3
+}

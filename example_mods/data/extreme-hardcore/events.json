@@ -1,0 +1,286 @@
+{
+	"song": {
+		"events": [
+			[
+				61650,
+				[
+					[
+						"Change Character",
+						"0",
+						"pogwarden"
+					]
+				]
+			],
+			[
+				64125,
+				[
+					[
+						"Change Character",
+						"1",
+						"averagesteve"
+					],
+					[
+						"bgremove",
+						"cenairo",
+						""
+					]
+				]
+			],
+			[
+				64162.5,
+				[
+					[
+						"Change Character",
+						"0",
+						"bf"
+					]
+				]
+			],
+			[
+				84900,
+				[
+					[
+						"Image Flash",
+						"camerabugou",
+						"3"
+					]
+				]
+			],
+			[
+				84975,
+				[
+					[
+						"Change Character",
+						"1",
+						"stev"
+					]
+				]
+			],
+			[
+				91680,
+				[
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					],
+					[
+						"bgremove",
+						"stev",
+						""
+					]
+				]
+			],
+			[
+				107100,
+				[
+					[
+						"Change Character",
+						"1",
+						"stev"
+					]
+				]
+			],
+			[
+				114780,
+				[
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					]
+				]
+			],
+			[
+				127245,
+				[
+					[
+						"Change Character",
+						"1",
+						"steve"
+					]
+				]
+			],
+			[
+				136845,
+				[
+					[
+						"Change Character",
+						"1",
+						"averagesteve"
+					]
+				]
+			],
+			[
+				146295,
+				[
+					[
+						"Change Character",
+						"1",
+						"steve"
+					]
+				]
+			],
+			[
+				151320,
+				[
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					]
+				]
+			],
+			[
+				160770,
+				[
+					[
+						"Change Character",
+						"1",
+						"stevehead"
+					],
+					[
+						"bgremove",
+						"herobri",
+						""
+					]
+				]
+			],
+			[
+				175320,
+				[
+					[
+						"Change Character",
+						"1",
+						"steve"
+					],
+					[
+						"bgremove",
+						"classic",
+						""
+					]
+				]
+			],
+			[
+				176445,
+				[
+					[
+						"Change Character",
+						"1",
+						"averagesteve"
+					]
+				]
+			],
+			[
+				177645,
+				[
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					]
+				]
+			],
+			[
+				178845,
+				[
+					[
+						"Change Character",
+						"1",
+						"steve"
+					]
+				]
+			],
+			[
+				180045,
+				[
+					[
+						"Change Character",
+						"1",
+						"averagesteve"
+					]
+				]
+			],
+			[
+				181245,
+				[
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					]
+				]
+			],
+			[
+				182445,
+				[
+					[
+						"Change Character",
+						"1",
+						"steve"
+					]
+				]
+			],
+			[
+				183645,
+				[
+					[
+						"Change Character",
+						"1",
+						"averagesteve"
+					]
+				]
+			],
+			[
+				184845,
+				[
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					]
+				]
+			],
+			[
+				186045,
+				[
+					[
+						"Change Character",
+						"1",
+						"steve"
+					]
+				]
+			],
+			[
+				187245,
+				[
+					[
+						"Change Character",
+						"1",
+						"averagesteve"
+					]
+				]
+			],
+			[
+				188445,
+				[
+					[
+						"Change Character",
+						"1",
+						"herobrine"
+					]
+				]
+			],
+			[
+				189570,
+				[
+					[
+						"Change Character",
+						"1",
+						"stev"
+					]
+				]
+			]
+		]
+	}
+}

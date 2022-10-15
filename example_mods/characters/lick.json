@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				49,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				143,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				60,
+				-30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				74,
+				140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				90,
+				67
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
+				-70
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "appear",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/lick",
+	"position": [
+		0,
+		10
+	],
+	"healthicon": "lick",
+	"flip_x": false,
+	"healthbar_colors": [
+		197,
+		195,
+		0
+	],
+	"camera_position": [
+		-250,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.3
+}

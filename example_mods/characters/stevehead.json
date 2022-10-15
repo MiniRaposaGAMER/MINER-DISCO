@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				49,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-248,
+				30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				60,
+				-130
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				74,
+				60
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				370,
+				-13
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
+				-60
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "appear",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/stevehead",
+	"position": [
+		-120,
+		-20
+	],
+	"healthicon": "stev",
+	"flip_x": false,
+	"healthbar_colors": [
+		125,
+		125,
+		125
+	],
+	"camera_position": [
+		-250,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

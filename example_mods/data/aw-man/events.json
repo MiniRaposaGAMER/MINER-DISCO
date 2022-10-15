@@ -1,0 +1,216 @@
+{
+	"song": {
+		"events": [
+			[
+				22750,
+				[
+					[
+						"Change Character",
+						"1",
+						"creeperrap"
+					]
+				]
+			],
+			[
+				22800,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				23000,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				29800,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				30000,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				33600,
+				[
+					[
+						"Image Flash",
+						"explosion",
+						"0.5"
+					]
+				]
+			],
+			[
+				33650,
+				[
+					[
+						"bgremove",
+						"weebSchool",
+						""
+					]
+				]
+			],
+			[
+				35200,
+				[
+					[
+						"Image Flash",
+						"explosion",
+						"0.5"
+					]
+				]
+			],
+			[
+				35250,
+				[
+					[
+						"bgremove",
+						"destroy",
+						""
+					]
+				]
+			],
+			[
+				36800,
+				[
+					[
+						"Image Flash",
+						"explosion",
+						"0.5"
+					]
+				]
+			],
+			[
+				36850,
+				[
+					[
+						"bgremove",
+						"destroy2",
+						""
+					]
+				]
+			],
+			[
+				38400,
+				[
+					[
+						"Image Flash",
+						"explosion",
+						"0.5"
+					]
+				]
+			],
+			[
+				38450,
+				[
+					[
+						"bgremove",
+						"destroy3",
+						""
+					]
+				]
+			],
+			[
+				39800,
+				[
+					[
+						"Image Flash",
+						"explosion",
+						"0.5"
+					]
+				]
+			],
+			[
+				41350,
+				[
+					[
+						"Image Flash",
+						"explosion",
+						"0.5"
+					]
+				]
+			],
+			[
+				41400,
+				[
+					[
+						"Change Character",
+						"1",
+						"creeper"
+					]
+				]
+			],
+			[
+				56400,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				56600,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				59200,
+				[
+					[
+						"Change Character",
+						"1",
+						"creeperrap"
+					]
+				]
+			],
+			[
+				90650,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				90850,
+				[
+					[
+						"Add Camera Zoom",
+						"1",
+						"0.5"
+					]
+				]
+			]
+		]
+	}
+}

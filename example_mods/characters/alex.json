@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				54,
+				-59
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				-60
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				-53
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				10,
+				-60
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				30,
+				-60
+			],
+			"indices": [],
+			"fps": 9,
+			"anim": "idle",
+			"loop": true,
+			"name": "idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/alex",
+	"position": [
+		0,
+		120
+	],
+	"healthicon": "alex",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		201,
+		131
+	],
+	"camera_position": [
+		-460,
+		-100
+	],
+	"sing_duration": 4,
+	"scale": 2.1
+}

@@ -1,0 +1,701 @@
+{
+	"song": {
+		"events": [
+			[
+				26375,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				26500,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				26750,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				26875,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				27000,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				27125,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				27250,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				27625,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				27875,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"1"
+					]
+				]
+			],
+			[
+				28125,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"1"
+					]
+				]
+			],
+			[
+				28375,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				28625,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				28875,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				29125,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				29250,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				29375,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					],
+					[
+						"Play Animation",
+						"singright",
+						"1"
+					]
+				]
+			],
+			[
+				29500,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				29625,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					],
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				29750,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				29875,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				30000,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				30125,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				30250,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				30375,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				30500,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				30625,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				30750,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"1"
+					]
+				]
+			],
+			[
+				30875,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				31000,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				31125,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				31250,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				31500,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				31625,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				31750,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				31875,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				32125,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				32250,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				32500,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				32750,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				32875,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				33000,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				33250,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				33625,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				33750,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				34000,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				34125,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				34250,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				34375,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				34500,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				34625,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				34750,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				35000,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				35375,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				35500,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				35750,
+				[
+					[
+						"Play Animation",
+						"singright",
+						"0"
+					]
+				]
+			],
+			[
+				35875,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				36125,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				60625,
+				[
+					[
+						"bgremove",
+						"bookshelf",
+						""
+					],
+					[
+						"Change Character",
+						"1",
+						"amogu"
+					],
+					[
+						"Change Character",
+						"0",
+						"tankman-player"
+					]
+				]
+			],
+			[
+				86050,
+				[
+					[
+						"Change Character",
+						"0",
+						"tankmine"
+					],
+					[
+						"Change Character",
+						"1",
+						"amogumine"
+					],
+					[
+						"bgremove",
+						"front",
+						""
+					],
+					[
+						"bgremove",
+						"space",
+						""
+					]
+				]
+			],
+			[
+				96550,
+				[
+					[
+						"Change Character",
+						"1",
+						"amogu"
+					],
+					[
+						"Change Character",
+						"0",
+						"tankman-player"
+					],
+					[
+						"bgremove",
+						"bookshelf2",
+						""
+					]
+				]
+			],
+			[
+				110650,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				112375,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			],
+			[
+				112450,
+				[
+					[
+						"Play Animation",
+						"singup",
+						"0"
+					]
+				]
+			],
+			[
+				112675,
+				[
+					[
+						"Play Animation",
+						"singleft",
+						"0"
+					]
+				]
+			],
+			[
+				113050,
+				[
+					[
+						"Play Animation",
+						"singdown",
+						"0"
+					]
+				]
+			]
+		]
+	}
+}

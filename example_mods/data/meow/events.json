@@ -1,0 +1,66 @@
+{
+	"song": {
+		"events": [
+			[
+				32625,
+				[
+					[
+						"Image Flash",
+						"bedrockcat",
+						"0.5"
+					]
+				]
+			],
+			[
+				32850,
+				[
+					[
+						"Change Character",
+						"1",
+						"removed"
+					]
+				]
+			],
+			[
+				48600,
+				[
+					[
+						"Image Flash",
+						"bedrockcat",
+						"0.5"
+					]
+				]
+			],
+			[
+				54150,
+				[
+					[
+						"Image Flash",
+						"cyclopscat",
+						"0.5"
+					]
+				]
+			],
+			[
+				54450,
+				[
+					[
+						"Change Character",
+						"1",
+						"cato"
+					]
+				]
+			],
+			[
+				72675,
+				[
+					[
+						"Image Flash",
+						"cyclopscat",
+						"0.5"
+					]
+				]
+			]
+		]
+	}
+}
