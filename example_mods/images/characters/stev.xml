@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="stev.png">
+	<!-- CRIADO POR MIM SEM ADOBE ANIMATE PQ SOU POBRE -->
+	<SubTexture name="stev0000" x="0" y="0" width="500" height="500" frameX="0" frameY="0" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="stev0001" x="0" y="0" width="500" height="500" frameX="0" frameY="0" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="stev0002" x="0" y="0" width="500" height="500" frameX="0" frameY="0" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="stev0003" x="0" y="0" width="500" height="500" frameX="0" frameY="0" frameWidth="500" frameHeight="500"/>
+</TextureAtlas>
