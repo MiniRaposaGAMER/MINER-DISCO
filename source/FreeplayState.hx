@@ -41,6 +41,20 @@ class FreeplayState extends MusicBeatState
 	var lerpRating:Float = 0;
 	var intendedScore:Int = 0;
 	var intendedRating:Float = 0;
+	
+	            var scaledY = FlxMath.remapToRange(targetY, 0, 1, 0, 1.3);
+
+            var lerpVal:Float = CoolUtil.boundTo(elapsed * 9.6, 0, 1);
+
+            y = FlxMath.lerp(y, (scaledY * yMult) + (FlxG.height * 0.48) + yAdd, lerpVal);
+
+            if(forceX != Math.NEGATIVE_INFINITY) {
+
+                screenCenter(X);
+
+            } else {
+
+                screenCenter(X);
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
@@ -306,29 +320,6 @@ class FreeplayState extends MusicBeatState
 				changeDiff();
 			}
 		}
-
-if (isMenuItemCenter)
-
-        {
-
-            var scaledY = FlxMath.remapToRange(targetY, 0, 1, 0, 1.3);
-
-            var lerpVal:Float = CoolUtil.boundTo(elapsed * 9.6, 0, 1);
-
-            y = FlxMath.lerp(y, (scaledY * yMult) + (FlxG.height * 0.48) + yAdd, lerpVal);
-
-            if(forceX != Math.NEGATIVE_INFINITY) {
-
-                screenCenter(X);
-
-            } else {
-
-                screenCenter(X);
-
-            }
-
-        }
-
 
 		if (controls.UI_LEFT_P)
 			changeDiff(-1);
