@@ -114,6 +114,7 @@ class FreeplayState extends MusicBeatState
 			var songText:Alphabet = new Alphabet(90, 320, songs[i].songName, true);
 			songText.isMenuItem = true;
 			songText.targetY = i - curSelected;
+                        songText.isMenuItemCenter = true;
 			grpSongs.add(songText);
 
 			var maxWidth = 980;
@@ -304,6 +305,29 @@ class FreeplayState extends MusicBeatState
 				changeDiff();
 			}
 		}
+
+if (isMenuItemCenter)
+
+        {
+
+            var scaledY = FlxMath.remapToRange(targetY, 0, 1, 0, 1.3);
+
+            var lerpVal:Float = CoolUtil.boundTo(elapsed * 9.6, 0, 1);
+
+            y = FlxMath.lerp(y, (scaledY * yMult) + (FlxG.height * 0.48) + yAdd, lerpVal);
+
+            if(forceX != Math.NEGATIVE_INFINITY) {
+
+                screenCenter(X);
+
+            } else {
+
+                screenCenter(X);
+
+            }
+
+        }
+
 
 		if (controls.UI_LEFT_P)
 			changeDiff(-1);
