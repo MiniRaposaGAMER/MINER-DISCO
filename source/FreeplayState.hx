@@ -18,6 +18,7 @@ import lime.utils.Assets;
 import flixel.system.FlxSound;
 import openfl.utils.Assets as OpenFlAssets;
 import WeekData;
+import Alphabet;
 #if MODS_ALLOWED
 import sys.FileSystem;
 #end
@@ -306,7 +307,7 @@ class FreeplayState extends MusicBeatState
 			}
 		}
 
-if (isMenuItemCenter )
+if (isMenuItemCenter)
 
         {
 
