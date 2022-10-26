@@ -306,7 +306,7 @@ class FreeplayState extends MusicBeatState
 			}
 		}
 
-if (isMenuItemCenter)
+if (isMenuItemCenter )
 
         {
 
