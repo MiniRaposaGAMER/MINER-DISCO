@@ -26,8 +26,14 @@ class Alphabet extends FlxSpriteGroup
 	public var bold:Bool = false;
 	public var letters:Array<AlphaCharacter> = [];
 
+	public var forceX:Float = Math.NEGATIVE_INFINITY;
+	public var targetY:Float = 0;
+	public var yMult:Float = 120;
+	public var xAdd:Float = 0;
+	public var yAdd:Float = 0;
 	public var isMenuItem:Bool = false;
-        public var isMenuItemCenter:Bool = false;
+	public var isMenuItemCentered:Bool = false;
+	public var textSize:Float = 1.0;
 	public var targetY:Int = 0;
 	public var changeX:Bool = true;
 	public var changeY:Bool = true;
