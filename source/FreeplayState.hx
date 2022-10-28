@@ -58,7 +58,7 @@ class FreeplayState extends MusicBeatState
 		
 		persistentUpdate = true;
 		PlayState.isStoryMode = false;
-		WeekData.reloadWeekFiles(false);
+		WeekData.reloadWeekFiles(true);
 
 		#if desktop
 		// Updating Discord Rich Presence
