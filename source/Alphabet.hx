@@ -34,7 +34,6 @@ class Alphabet extends FlxSpriteGroup
 	public var isMenuItem:Bool = false;
 	public var isMenuItemCentered:Bool = false;
 	public var textSize:Float = 1.0;
-	public var targetY:Int = 0;
 	public var changeX:Bool = true;
 	public var changeY:Bool = true;
 
