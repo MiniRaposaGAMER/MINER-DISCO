@@ -127,10 +127,6 @@ class FreeplayState extends MusicBeatState
 			{
 				var textScale:Float = 980 / songText.width;
 				songText.scale.x = textScale;
-				{
-					letter.x *= textScale;
-					letter.offset.x *= textScale;
-				}
 				//songText.updateHitbox();
 				//trace(songs[i].songName + ' new scale: ' + textScale);
 			}
