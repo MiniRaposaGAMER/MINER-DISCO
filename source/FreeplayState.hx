@@ -18,7 +18,6 @@ import lime.utils.Assets;
 import flixel.system.FlxSound;
 import openfl.utils.Assets as OpenFlAssets;
 import WeekData;
-import Alphabet;
 #if MODS_ALLOWED
 import sys.FileSystem;
 #end
@@ -36,28 +35,25 @@ class FreeplayState extends MusicBeatState
 
 	var scoreBG:FlxSprite;
 	var scoreText:FlxText;
+	var secretBG:FlxSprite;
+	var secretText:FlxText;
 	var diffText:FlxText;
 	var lerpScore:Int = 0;
 	var lerpRating:Float = 0;
 	var intendedScore:Int = 0;
 	var intendedRating:Float = 0;
-	var scaledY = FlxMath.remapToRange(targetY, 0, 1, 0, 1.3);
-        var lerpVal:Float = CoolUtil.boundTo(elapsed * 9.6, 0, 1);
-        y = FlxMath.lerp(y, (scaledY * yMult) + (FlxG.height * 0.48) + yAdd, lerpVal); }
-        if(forceX != Math.NEGATIVE_INFINITY) {
-        screenCenter(X);
+
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
 
 	private var iconArray:Array<HealthIcon> = [];
 
 	var bg:FlxSprite;
-	var intendedColor:Int;
 	var colorTween:FlxTween;
 
 	override function create()
 	{
-		//Paths.clearStoredMemory();
+		Paths.clearStoredMemory();
 		//Paths.clearUnusedMemory();
 		
 		persistentUpdate = true;
@@ -108,26 +104,37 @@ class FreeplayState extends MusicBeatState
 
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
+		bg.setGraphicSize(0, 720);
+		bg.x = FlxG.width - bg.width;
 		add(bg);
 		bg.screenCenter();
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
 
+		// Do this before adding all the songs
+		checkIfSecretUnlocked();
+
 		for (i in 0...songs.length)
 		{
-			var songText:Alphabet = new Alphabet(90, 320, songs[i].songName, true);
+			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName, true, false);
 			songText.isMenuItem = true;
-			songText.targetY = i - curSelected;
-                        songText.isMenuItemCenter = true;
+			songText.isMenuItemCentered = true;
+			songText.targetY = i;
 			grpSongs.add(songText);
 
-			var maxWidth = 980;
-			if (songText.width > maxWidth)
+			if (songText.width > 980)
 			{
-				songText.scaleX = maxWidth / songText.width;
+				var textScale:Float = 980 / songText.width;
+				songText.scale.x = textScale;
+				for (letter in songText.lettersArray)
+				{
+					letter.x *= textScale;
+					letter.offset.x *= textScale;
+				}
+				//songText.updateHitbox();
+				//trace(songs[i].songName + ' new scale: ' + textScale);
 			}
-			songText.snapToPosition();
 
 			Paths.currentModDirectory = songs[i].folder;
 			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
@@ -150,6 +157,20 @@ class FreeplayState extends MusicBeatState
 		scoreBG.alpha = 0.6;
 		add(scoreBG);
 
+		secretText = new FlxText(0, 71, 0, "", 32);
+		secretText.text = "You must beat every song before you can play this one!";
+		secretText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
+		secretText.screenCenter(X);
+		secretText.visible = false;
+
+		secretBG = new FlxSprite(secretText.x - 6, 66).makeGraphic(1, 42, 0xFF000000);
+		secretBG.scale.x = secretText.width + 6;
+		secretBG.x = (secretText.x + secretText.width) - (secretBG.scale.x / 2);
+		secretBG.alpha = 0.6;
+		secretBG.visible = false;
+		add(secretBG);
+		add(secretText);
+
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
 		diffText.font = scoreText.font;
 		add(diffText);
@@ -157,8 +178,6 @@ class FreeplayState extends MusicBeatState
 		add(scoreText);
 
 		if(curSelected >= songs.length) curSelected = 0;
-		bg.color = songs[curSelected].color;
-		intendedColor = bg.color;
 
 		if(lastDifficultyName == '')
 		{
@@ -239,7 +258,7 @@ class FreeplayState extends MusicBeatState
 	}*/
 
 	var instPlaying:Int = -1;
-	public static var vocals:FlxSound = null;
+	private static var vocals:FlxSound = null;
 	var holdTime:Float = 0;
 	override function update(elapsed:Float)
 	{
@@ -267,6 +286,7 @@ class FreeplayState extends MusicBeatState
 
 		scoreText.text = 'PERSONAL BEST: ' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
 		positionHighscore();
+		updateSecretText();
 
 		var upP = controls.UI_UP_P;
 		var downP = controls.UI_DOWN_P;
@@ -302,13 +322,6 @@ class FreeplayState extends MusicBeatState
 					changeDiff();
 				}
 			}
-
-			if(FlxG.mouse.wheel != 0)
-			{
-				FlxG.sound.play(Paths.sound('scrollMenu'), 0.2);
-				changeSelection(-shiftMult * FlxG.mouse.wheel, false);
-				changeDiff();
-			}
 		}
 
 		if (controls.UI_LEFT_P)
@@ -332,7 +345,7 @@ class FreeplayState extends MusicBeatState
 			persistentUpdate = false;
 			openSubState(new GameplayChangersSubstate());
 		}
-		else if(space)
+		else if(space && songs[curSelected].songName != "???")
 		{
 			if(instPlaying != curSelected)
 			{
@@ -358,7 +371,7 @@ class FreeplayState extends MusicBeatState
 			}
 		}
 
-		else if (accepted)
+		else if (accepted && songs[curSelected].songName != "???")
 		{
 			persistentUpdate = false;
 			var songLowercase:String = Paths.formatToSongPath(songs[curSelected].songName);
@@ -393,7 +406,7 @@ class FreeplayState extends MusicBeatState
 					
 			destroyFreeplayVocals();
 		}
-		else if(controls.RESET)
+		else if(controls.RESET && songs[curSelected].songName != "???")
 		{
 			persistentUpdate = false;
 			openSubState(new ResetScoreSubState(songs[curSelected].songName, curDifficulty, songs[curSelected].songCharacter));
@@ -441,19 +454,6 @@ class FreeplayState extends MusicBeatState
 			curSelected = songs.length - 1;
 		if (curSelected >= songs.length)
 			curSelected = 0;
-			
-		var newColor:Int = songs[curSelected].color;
-		if(newColor != intendedColor) {
-			if(colorTween != null) {
-				colorTween.cancel();
-			}
-			intendedColor = newColor;
-			colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
-				onComplete: function(twn:FlxTween) {
-					colorTween = null;
-				}
-			});
-		}
 
 		// selector.y = (70 * curSelected) + 30;
 
@@ -537,6 +537,48 @@ class FreeplayState extends MusicBeatState
 		scoreBG.x = FlxG.width - (scoreBG.scale.x / 2);
 		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
 		diffText.x -= diffText.width / 2;
+	}
+
+	function updateSecretText() {
+		if(songs[curSelected].songName == "???") {
+			secretBG.visible = true;
+			secretText.visible = true;
+		} else {
+			secretBG.visible = false;
+			secretText.visible = false;
+		}
+	}
+
+	function checkIfSecretUnlocked() {
+		var songsToCheck:Array<String> = [
+			"Humiliation",
+			"Mist",
+			"Doomsday",
+			"Sanguilacrimae",
+			"Tortured",
+			"Served",
+			"Satisfaction",
+			"Dead-Hope",
+			"Dumped",
+			"Cannibalism",
+			"Dehydrated",
+			"Joe-Mama"
+		];
+		var allowSecret:Bool = true;
+		
+		for(i in 0...songsToCheck.length) {
+			if(Highscore.getScore(songsToCheck[i], 0) == 0)
+				allowSecret = false;
+		}
+		
+		if(!allowSecret) {
+			for(i in 0...songs.length) {
+				if(songs[i].songName.toLowerCase() == "plagerize") {
+					songs.splice(i, 1);
+					songs.insert(i, new SongMetadata("???", 1, "secret", 0));
+				}
+			}
+		}
 	}
 }
 
