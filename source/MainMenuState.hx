@@ -241,7 +241,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED
 									case 'mods':
-										MusicBeatState.switchState(new ScpState());
+                                                                                PlayState.SONG = Song.loadFromJson('keter-hard', 'keter');
+                                                                                LoadingState.loadAndSwitchState(new PlayState());
 									#end
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());
